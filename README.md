@@ -109,9 +109,9 @@ $ docker run --rm -it -v $(pwd):/src klakegg/hugo:0.81.0 new --kind post posts/h
 Then we will see our post will have the defaults, and we can just replace and add what we want:
 
 ```
-$ cat content/posts/hello-agains.md
+$ cat content/posts/hello-again.md
 ---
-title: "Hello World"
+title: "Hello Again"
 date: 2021-03-09T08:36:35Z
 draft: false
 description: "."
