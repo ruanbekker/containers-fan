@@ -5,8 +5,31 @@ Hugo Blog Example with Papermod
 
 - [Quickstart](https://gohugo.io/getting-started/quick-start/)
 - [Theme](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
+- [Wiki](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
+- [Example Site](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
 
-## Setup
+## Quickstart
+
+Clone:
+
+```
+$ git clone https://github.com/ruanbekker/hugo-blog-papermod-example
+$ cd hugo-blog-papermod-example
+```
+
+Build:
+
+```
+$ docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo:0.81.0
+```
+
+Run:
+
+```
+$ docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo:0.81.0 server
+```
+
+## Run your own Hugo Container
 
 Build:
 
@@ -24,7 +47,7 @@ Get a new theme:
 
 ```
 git clone https://github.com/adityatelange/hugo-PaperMod data/blog/themes/PaperMod --depth=1
-echo 'theme: "PaperMod"' >> data/blog/config.toml
+echo 'theme = "PaperMod"' >> data/blog/config.toml
 ```
 
 Create a new post:
