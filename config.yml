@@ -1,5 +1,6 @@
 # https://emojipedia.org/flag-south-africa/
-baseURL: "http://localhost/"
+#baseURL: "http://localhost/"
+baseURL: "https://youthful-bell-a38933.netlify.app/"
 title: PaperMod | 🇿🇦
 paginate: 5
 theme: hugo-PaperMod
