@@ -1,5 +1,5 @@
-# hugo-blog-papermod-example
-Hugo Blog Example with Papermod
+# containers-fan
+Hugo Blog with the Papermod Theme for https://containers.fan
 
 ## Resources
 
