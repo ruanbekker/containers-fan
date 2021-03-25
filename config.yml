@@ -44,7 +44,7 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    author: Ruan Bekker
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -73,21 +73,27 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Everything Containers"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
+            Welcome to [containers.fan](https://containers.fan) tech blog, where I write about anything containers from docker, kubernetes, docker swarm, aws ecs, etc.
 
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+            Feel free to reach out to me on Twitter 🐦 [@ruanbekker](https://twitter.com/ruanbekker) 
 
-            - Do give a 🌟 on Github !
 
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
-
+    # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
     socialIcons:
+        - name: other
+          url: "https://ruan.dev"
         - name: github
           url: "https://github.com/ruanbekker"
+        - name: dev
+          url: "https://dev.to/ruanbekker"
         - name: KoFi
           url: "https://ko-fi.com/ruanbekker"
+        - name: slack
+          url: "http://linux-hackers-slack.herokuapp.com"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/ruanbekker"
         - name: RsS
           url: "index.xml"
 
