@@ -43,7 +43,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    description: "Tech Blog on Tutorials and Tips on Everything Containers from Docker, Kubernetes, AWS ECS."
     author: Ruan Bekker
     # author: ["Me", "You"] # multiple authors
 
@@ -57,7 +57,7 @@ params:
     ShowBreadCrumbs: true
     ShowToc: true
     # comments: false
-    images: ["papermod-cover.png"]
+    images: ["containersfan-cover.png"]
 
     profileMode:
         enabled: false
@@ -76,9 +76,7 @@ params:
         Title: "Everything Containers Blog"
         Content: >
             Welcome to [containers.fan](https://containers.fan) tech blog, where I write about anything containers from docker, kubernetes, docker swarm, aws ecs, etc.
-            - 
-
-            Feel free to reach out to me on Twitter 🐦 [@ruanbekker](https://twitter.com/ruanbekker) 
+            - Feel free to reach out to me on Twitter 🐦 [@ruanbekker](https://twitter.com/ruanbekker) 
 
 
     # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
