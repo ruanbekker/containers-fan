@@ -8,6 +8,10 @@ Hugo Blog Example with Papermod
 - [Wiki](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
 - [Example Site](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
 
+## Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ruanbekker/hugo-blog-papermod-example)
+
 ## Quickstart
 
 Clone:
