@@ -1,6 +1,6 @@
 # https://emojipedia.org/flag-south-africa/
-baseURL: "http://localhost/"
-title: PaperMod | 🇿🇦
+baseURL: "https://containers.fan/"
+title: containers.fan | 🇿🇦
 paginate: 5
 theme: hugo-PaperMod
 
