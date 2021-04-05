@@ -125,7 +125,7 @@ Now run a new container with the same volume mappings, and you should see the pe
 docker run --rm -it -v /tmp/data:/data ubuntu bash
 root@193d7f987a32:/# cat /data/test1.txt
 hi
-``
+```
 
 And the non-persisted location is not accessible:
 
