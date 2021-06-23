@@ -9,6 +9,10 @@ categories: ["containers"]
 
 In this tutorial we will be setting up [Traefik ](https://traefik.io) v2 as our reverse proxy with port 80 and 443 enabled, and then hook up a example application behind the application load balancer, and route incoiming requests via host headers.
 
+## What is Traefik
+
+Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices super easy by making use of docker labels to route your traffic based on host headers, path prefixes etc. Please check out [their website](https://doc.traefik.io/traefik/) to find out more about them.
+
 ## Use Case
 
 In our example we want to route traefik from `http://app.mydomain.net` to hit our proxy on port 80, then we want traefik to redirect port 80 to the 443 port configured on the proxy which is configured with letsencrypt and reverse proxy the connection to our application.
@@ -85,6 +89,14 @@ services:
 networks:
   docknet:
     name: docknet
+```
+
+Prepare the `./traefik/acme.json` file:
+
+```
+mkdir traefik
+touch traefik/acme.json
+chmod 600 traefik/acme.json
 ```
 
 As you can see in order to wire a application onto the proxy we need the following labels:
