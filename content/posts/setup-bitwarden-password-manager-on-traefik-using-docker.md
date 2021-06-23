@@ -1,6 +1,6 @@
 
 ---
-title: "Setup Bitwarden Pasword Manager on Docker with Traefik"
+title: "Setup Bitwarden Pasword Manager on Docker with Traefik Proxy"
 date: 2021-06-23T06:00:00+02:00
 draft: false
 description: "Learn how to setup a open source password manager called bitwarden on docker and use traefik as our http proxy with letsencrypt ssl traefik from secure communication"
@@ -8,7 +8,7 @@ tags: ["docker", "containers", "traefik", "bitwarden", "security"]
 categories: ["containers"]
 ---
 
-Today we will setup **Bitwarden** and **Traefik** on Docker using Docker Compose. We will make use of **Letsencrypt** for our SSL Certificates so that our communcation from the clients and server is secure and then we will install the **Bitwarden Firefox browser extension** to save our passwords for our web applications on Bitwarden password manager.
+Today we will setup **Bitwarden** and **Traefik Proxy** on Docker using Docker Compose. We will make use of **Letsencrypt** for our SSL Certificates so that our communcation from the clients and server is secure and then we will install the **Bitwarden Firefox browser extension** to save our passwords for our web applications on Bitwarden password manager.
 
 ## What is Bitwarden
 
@@ -16,11 +16,11 @@ Today we will setup **Bitwarden** and **Traefik** on Docker using Docker Compose
 
 Bitwarden is open source password manager, similar to Last Pass and makes it super easy to generate and store unique passwords for any browser or device. You own the data as it's self hosted, which is a plus for security, but always keep in mind to keep your local content safe and secure. Please check out [their website](https://bitwarden.com/) to find out more about them.
 
-## What is Traefik
+## What is Traefik Proxy
 
-![traefik-image](https://user-images.githubusercontent.com/567298/123048606-de51f880-d3fe-11eb-9f28-350ffa0922ec.png)
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/567298/123080834-a27a5b80-d41d-11eb-8613-78cef2527368.png">
 
-Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices super easy by making use of docker labels to route your traffic based on host headers, path prefixes etc. Please check out [their website](https://doc.traefik.io/traefik/) to find out more about them.
+[Traefik Proxy](https://traefik.io/traefik/), from [Traefik Labs](https://traefik.io/) is a modern HTTP reverse proxy and load balancer that makes deploying microservices super easy by making use of docker labels to route your traffic based on host headers, path prefixes etc. Please check out [their website](https://doc.traefik.io/traefik/) to find out more about them.
 
 ## DNS
 
