@@ -18,7 +18,7 @@ Bitwarden is open source password manager, similar to Last Pass and makes it sup
 
 ## What is Traefik Proxy
 
-<img width="896" alt="image" src="https://user-images.githubusercontent.com/567298/123080834-a27a5b80-d41d-11eb-8613-78cef2527368.png">
+![traefik-image](https://user-images.githubusercontent.com/567298/123080834-a27a5b80-d41d-11eb-8613-78cef2527368.png)
 
 [Traefik Proxy](https://traefik.io/traefik/), from [Traefik Labs](https://traefik.io/) is a modern HTTP reverse proxy and load balancer that makes deploying microservices super easy by making use of docker labels to route your traffic based on host headers, path prefixes etc. Please check out [their website](https://doc.traefik.io/traefik/) to find out more about them.
 
