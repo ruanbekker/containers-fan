@@ -8,7 +8,11 @@ hidemeta: true
 comments: false
 ---
 
-Hello! My name is Ruan Bekker, I currently work as a DevOps Engineer for **[Techno Ponies](https://za.linkedin.com/company/technoponies)**
+Hello! My name is **[Ruan Bekker](https://ruan.dev)**, I currently work as a DevOps Engineer for **[Techno Ponies](https://za.linkedin.com/company/technoponies)**
+
+<center>
+![](https://www.gravatar.com/avatar/6b3eb8d6f2eda48526565ed64de24800?s=240&d=mp)
+</center>
 
 ## Me
 
