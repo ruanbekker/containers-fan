@@ -92,6 +92,8 @@ params:
           url: "https://dev.to/ruanbekker"
         - name: KoFi
           url: "https://ko-fi.com/ruanbekker"
+        - name: rocketchat
+          url: "https://chat.ruan.dev"
         - name: slack
           url: "http://linux-hackers-slack.herokuapp.com"
         - name: linkedin
