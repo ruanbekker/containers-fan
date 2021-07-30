@@ -1,6 +1,6 @@
 
 ---
-title: "Setup Bitwarden Pasword Manager on Docker with Traefik Proxy"
+title: "Setup Bitwarden Password Manager on Docker with Traefik Proxy"
 date: 2021-06-23T06:00:00+02:00
 draft: false
 description: "Learn how to setup a open source password manager called bitwarden on docker and use traefik as our http proxy with letsencrypt ssl traefik from secure communication"
