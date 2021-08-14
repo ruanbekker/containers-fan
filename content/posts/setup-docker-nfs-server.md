@@ -86,7 +86,9 @@ $ ls /data/docker-volumes/
 file.txt
 ```
 
-If you want to load this into other client's /etc/fstab:
+## Persistent Mount
+
+If you want to load this into other client's `/etc/fstab`:
 
 ```bash
 192.168.0.4:/   /mnt   nfs4    _netdev,auto  0  0
