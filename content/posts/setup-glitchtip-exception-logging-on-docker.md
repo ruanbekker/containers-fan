@@ -7,11 +7,15 @@ tags: ["docker", "glitchtip", "monitoring"]
 categories: ["containers"]
 ---
 
-[Glitchtip](https://glitchtip.com/) is a open-source exception monitoring system, it's similar to [Sentry](https://sentry.io/welcome/), which collects errors reported from your applications and helps you discover errors in real time and also helps you to understand the health of your applications. 
+**[Glitchtip](https://glitchtip.com/)** is a open-source exception monitoring system, it's similar to **[Sentry](https://sentry.io/welcome/)**, which collects errors reported from your applications and helps you discover **errors** in real time and also helps you to understand the health of your applications. 
 
 ## What are we doing today?
 
 In this tutorial we will setup **Glitchtip** on **Docker** using **Traefik** as our Load Balancer and SSL terminations for LetsEncrypt certificates, then we will create a Python Flask application and initiate a error so that we can see how these errors are collected by **Glitchtip** and we will also add an Webhook Server to demonstrate logging errors to a Webhook Endpoint for further development on errors.
+
+So that we can see our exceptions in our applications like this:
+
+![](https://user-images.githubusercontent.com/567298/135032641-b55fad6b-c010-4ba7-b783-fdc49fd69d69.png)
 
 ## Assumptions
 
