@@ -1,6 +1,6 @@
 ---
 title: "Setup Glitchtip Exception Monitoring on Docker with Traefik"
-date: 2021-04-05T23:43:54+02:00
+date: 2021-10-04T07:00:00+02:00
 draft: false
 description: "Tutorial on setting up glitchtip exception monitoring on docker and docker-compose, the open-source alternative to Sentry."
 tags: ["docker", "glitchtip", "monitoring"]
