@@ -31,8 +31,8 @@ I will publish the code for this tutorial under my [Github Repository](https://g
 I have 3 DNS Entries:
 
 - Glitchtip: `gc.civo.rbkr.xyz`
-- Flask App: `flask-app.gc.rbkr.xyz`
-- Webhook: `webhook.gc.rbkr.xyz`
+- Flask App: `flask-app.civo.rbkr.xyz`
+- Webhook: `flask-webhook.civo.rbkr.xyz`
 
 Which all points to the host running Glitchtip.
 
