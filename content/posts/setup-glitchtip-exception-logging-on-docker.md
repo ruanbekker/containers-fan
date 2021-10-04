@@ -1,5 +1,3 @@
-# Tfmodule AWS Network Datasource
-
 ---
 title: "Setup Glitchtip Exception Monitoring on Docker with Traefik"
 date: 2021-04-05T23:43:54+02:00
