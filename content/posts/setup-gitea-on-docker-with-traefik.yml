@@ -7,7 +7,7 @@ tags: ["docker", "gitea", "git"]
 categories: ["containers"]
 ---
 
-**[Gitea](https://gitea.io/en-us/)** is a self-hosted [git](https://en.wikipedia.org/wiki/Git) service written in Go, it's super lightweight to run and supports ARM architectures as well, so you can run it on a Raspberry Pi as well.
+**[Gitea](https://gitea.io/en-us/)** is a self-hosted [git](https://en.wikipedia.org/wiki/Git) service written in Go, its super lightweight to run and supports ARM architectures as well, so you can run it on a Raspberry Pi as well.
 
 ## What are we doing today
 
@@ -26,7 +26,7 @@ I have 1 DNS entry set to the following:
 - Traefik: `traefik.rbkr.xyz`
 - Gitea: `git.rbkr.xyz`
 
-Accessing our service will be done over `HTTPS` on port `443`, and for cloning over `SSH`, the port will be set to `222`
+Accessing our service will be done over `HTTPS` on port `443`, and for cloning over `SSH`, the port will be set to `222`.
 
 ## Directory Structure
 
@@ -109,7 +109,10 @@ docker-compose up -d
 
 ## Gitea
 
-Now we will add the Gitea components, I have opted in for the gitea service and a redis cache and will be making use of sqlite as this is just a demonstration. For non-test environments, you can have a look at MySQL or Postres:
+Now we will add the Gitea components, I have opted in for the gitea service and a redis cache and will be making use of sqlite as this is just a demonstration. 
+
+For non-test environments, you can have a look at MySQL or Postres:
+
 - https://docs.gitea.io/en-us/install-with-docker/#databases
 
 Review the following configuration options:
@@ -191,7 +194,7 @@ services:
       driver: "json-file"
       options:
         max-size: "1m"
-...
+  ...
 
 ```
 
@@ -350,7 +353,7 @@ Then configure the admin account:
 
 Once you are logged in, you should see the following screen:
 
-![image](https://user-images.githubusercontent.com/567298/138002202-818a364c-74a9-4be9-8963-cd151d10d96f.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002202-818a364c-74a9-4be9-8963-cd151d10d96f.png)
 
 ## SSH Key
 
@@ -362,11 +365,11 @@ ssh-keygen -f ~/.ssh/gitea-demo -t rsa -C "Gitea-Demo" -q -N ""
 
 Then head to your profile, select settings:
 
-![image](https://user-images.githubusercontent.com/567298/138002368-679ca1eb-81a3-4a83-8aaf-e5c182305be4.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002368-679ca1eb-81a3-4a83-8aaf-e5c182305be4.png)
 
 Select the SSH Tab and select "Add Key":
 
-![image](https://user-images.githubusercontent.com/567298/138002437-a43fbd5b-92a6-40b8-abb1-ebe78c8a5c67.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002437-a43fbd5b-92a6-40b8-abb1-ebe78c8a5c67.png)
 
 Head back to your terminal and copy your public ssh key from the key that we created earlier:
 
@@ -377,29 +380,29 @@ ssh-rsa AAAAB[x----redacted----x]/en5QDz3vI18n1u4lrKu1YsTR57YL Gitea-Demo
 
 Then paste the public key into the form and add the key, you should then see the key present in gitea:
 
-![image](https://user-images.githubusercontent.com/567298/138002601-be049746-fcb6-46ad-a931-bfa11d1725b2.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002601-be049746-fcb6-46ad-a931-bfa11d1725b2.png)
 
 ## Create a Git Repository
 
 Now head back to the "Dashboard", then select the "+" sign at the top and create a "New Repository":
 
-![image](https://user-images.githubusercontent.com/567298/138002657-054e9e6a-25bd-4f4a-9bdb-ef368a720e5f.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002657-054e9e6a-25bd-4f4a-9bdb-ef368a720e5f.png)
 
 From the repo form, I will be naming my repository "hello-world":
 
-![image](https://user-images.githubusercontent.com/567298/138002751-88ff1793-b6e4-4ac4-886d-d4826e152ffa.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002751-88ff1793-b6e4-4ac4-886d-d4826e152ffa.png)
 
 Then I selected "Initialise repository with Readme" and I selected to create the repository:
 
-![image](https://user-images.githubusercontent.com/567298/138002819-69ce233d-c073-4ed4-a714-1762d34f5b47.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002819-69ce233d-c073-4ed4-a714-1762d34f5b47.png)
 
 Now when we select the repo, we should see it in the Gitea UI:
 
-![image](https://user-images.githubusercontent.com/567298/138002865-2e9cc6d9-3fea-4f32-91b8-6199063b7d4f.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002865-2e9cc6d9-3fea-4f32-91b8-6199063b7d4f.png)
 
 To clone the repository via SSH, select the "SSH" button and click copy to clipboard:
 
-![image](https://user-images.githubusercontent.com/567298/138002962-962b746f-619e-4f08-b058-6d8f4d719e89.png)
+![gitea](https://user-images.githubusercontent.com/567298/138002962-962b746f-619e-4f08-b058-6d8f4d719e89.png)
 
 Before we clone the repo on our terminal, let's setup the ssh-agent to be active for 1 hour:
 
@@ -471,7 +474,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Add the file, commit and push to master:
 
-```
+```bash
 git add README.md
 git commit -m "Update readme for blogpost"
 git push origin master
@@ -506,7 +509,7 @@ And it looks like the following:
 
 ## Thank You
 
-I hope this was helpful, I was really impressed with Glitchtip. If you liked this content, please make sure to share or come say hi on my website or twitter:
+I hope this was helpful, I was really impressed with Gitea. If you liked this content, please make sure to share or come say hi on my website or twitter:
 
   * **Website**: [ruan.dev](https://ruan.dev)
   * **Twitter**: [@ruanbekker](https://twitter.com/ruanbekker)
