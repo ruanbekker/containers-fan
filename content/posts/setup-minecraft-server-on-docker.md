@@ -202,19 +202,19 @@ Once installed, install the forge client:
 
 Open minecraft and you should see the forge under our installations:
 
-![](https://user-images.githubusercontent.com/567298/136714729-d37a9428-75c0-416c-9107-bb9604ce422e.png)
+![minecraft](https://user-images.githubusercontent.com/567298/136714729-d37a9428-75c0-416c-9107-bb9604ce422e.png)
 
 When we run our forge installation you should see something like this:
 
-![](https://user-images.githubusercontent.com/567298/136714751-fdf10fec-a1cd-4ea4-937d-7305f119891e.png)
+![minecraft](https://user-images.githubusercontent.com/567298/136714751-fdf10fec-a1cd-4ea4-937d-7305f119891e.png)
 
 Then on the multiplayer section you should see the servers below:
 
-<img width="855" alt="image" src="https://user-images.githubusercontent.com/567298/138816528-4eff80e0-7289-440b-81d1-5223390404af.png">
+![minecraft](https://user-images.githubusercontent.com/567298/138816528-4eff80e0-7289-440b-81d1-5223390404af.png)
 
 You will most probably have no servers by default, so then add your server, you will need the IP Address of where minecraft is running:
 
-<img width="856" alt="image" src="https://user-images.githubusercontent.com/567298/138816726-5107c9d6-65a5-4a88-b49b-e1c500b0a484.png">
+![minecraft](https://user-images.githubusercontent.com/567298/138816726-5107c9d6-65a5-4a88-b49b-e1c500b0a484.png)
 
 Save it and join your server and you should be connected to your server.
 
@@ -263,7 +263,8 @@ Open crontab with `crontab -e` and add the cron expression to backup daily at 00
 
 This is a nice tutorial I stumbled upon for getting started:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OozklZXFbDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube OozklZXFbDQ >}}
+
 
 ## Credit
 
