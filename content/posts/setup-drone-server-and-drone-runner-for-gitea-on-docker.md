@@ -11,6 +11,8 @@ Drone, a continiuous integration platform which is super close to my heart :hear
 
 In this post we will setup Drone Server and Drone Runner for Gitea to run your Continuous Integration Pipelines, then we will setup a example pipeline, discover the drone-cli and how to extend our setup with more runners.
 
+The source code of this post is available in my [github repository](https://github.com/ruanbekker/drone-gitea-traefik-docker-blogpost)
+
 ## What is Drone?
 
 **[Drone](https://www.drone.io/)** is a self-service continuous delivery platform which is built on container technology and can be used for CI/CD Pipelines, and has one extensive list of [plugins](http://plugins.drone.io/) enabling you to run almost any workflow you can think of.
