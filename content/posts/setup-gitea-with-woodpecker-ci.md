@@ -7,7 +7,7 @@ tags: ["docker", "cicd", "devops", "woodpecker", "gitea"]
 categories: ["containers"]
 ---
 
-In this tutorial we will setup Gitea as our version control system, and we will setup Woodpecker Ci (Server and Agent) to run our builds from a simple pipeline that we define in yaml, and the best is that our builds runs on containers.
+In this tutorial we will setup Gitea as our version control system, and we will setup Woodpecker Ci (Server and Agent) to run our builds from a simple pipeline that we define in yaml, and the best is that our builds runs on containers. We will run these on [docker](https://docs.docker.com/get-docker/) and make use of [docker-compose](https://docs.docker.com/get-docker/).
 
 ## What is Woodpecker
 
