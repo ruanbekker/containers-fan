@@ -228,6 +228,9 @@ when:
 For more information on the pipeline syntax, view:
 - https://woodpecker-ci.org/docs/usage/pipeline-syntax
 
+For more examples, see their repository:
+- https://github.com/woodpecker-ci/woodpecker/tree/master/.woodpecker
+
 ## Thank You
 
 Thanks for reading, if you like the project, feel free to star, fork or share it, check out my **[website](https://ruan.dev)**, read my **[newsletter](http://digests.ruanbekker.com/?via=ruanbekker-blog)** or follow me at **[@ruanbekker](https://twitter.com/ruanbekker)** on Twitter.
