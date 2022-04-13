@@ -1,6 +1,6 @@
 ---
 title: "Setup Gitea with Woodpecker CI"
-date: 2022-04-14T20:00:00+02:00
+date: 2022-04-13T20:00:00+02:00
 draft: false
 description: "This tutorial will demonstrate how to setup gitea version control with woodpecker ci, to run all your builds in containers."
 tags: ["docker", "cicd", "devops", "woodpecker", "gitea"]
