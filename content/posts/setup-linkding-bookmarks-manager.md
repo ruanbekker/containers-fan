@@ -93,7 +93,7 @@ You can find that at the bottom of the "Integrations" section:
 
 ## REST API
 
-You can follow the [API Docs](https://github.com/sissbruecker/linkding/blob/master/docs/API.md) for more information, 
+You can follow the [API Docs](https://github.com/sissbruecker/linkding/blob/master/docs/API.md) for more information, using an example to search for bookmarks with the term "docker":
 
 ```bash
 curl -sL -H "Authorization: Token ${LINKDING_API_TOKEN}" "https://linkding.${DOMAIN}/api/bookmarks?q=docker" | python3 -m json.tool
