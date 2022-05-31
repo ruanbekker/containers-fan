@@ -788,7 +788,7 @@ If we prettify it, you can see we can consume this information and do our own in
 
 And our email notification will look like this:
 
-<img width="1154" alt="image" src="https://user-images.githubusercontent.com/567298/135065119-be98faff-1c70-47f3-812a-893c348ffd50.png">
+![image](https://user-images.githubusercontent.com/567298/165779519-9f65d48e-9285-4524-973d-5452930a79e0.png)
 
 ## The Complete Compose
 
