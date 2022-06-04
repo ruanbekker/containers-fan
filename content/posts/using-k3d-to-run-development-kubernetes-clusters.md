@@ -118,34 +118,38 @@ k3d cluster delete containers-fan-cluster
 
 ## Bootstrapping Clusters with Config
 
-We can use [config files](https://k3d.io/v5.3.0/usage/configfile/) with k3d in order to bootstrap our cluster the way we want it to be, without using a bunch of cli arguments.
+We can use [config files (v5.4.0)](https://k3d.io/v5.4.1/usage/configfile/) with k3d in order to bootstrap our cluster the way we want it to be, without using a bunch of cli arguments.
 
 We can define our `cluster.yml` with the following:
 
 ```yaml
 apiVersion: k3d.io/v1alpha4
-kind: Simple 
-name: containers-fan-cluster2
-servers: 1 
-agents: 2 
-kubeAPI: 
- hostIP: "127.0.0.1"
- hostPort: "6445"
+kind: Simple
+metadata:
+  name: containers-fan-cluster2
+servers: 1
+agents: 2
+kubeAPI:
+  host: "master.127.0.0.1.nip.io"
+  hostIP: "127.0.0.1"
+  hostPort: "6445"
+image: rancher/k3s:v1.20.4-k3s1
 ports:
- - port: 8080:80 
-   nodeFilters:
-     - loadbalancer
+  - port: 8080:80
+    nodeFilters:
+      - loadbalancer
 options:
- k3d: 
-   wait: true 
-   timeout: "60s"  
- k3s: 
-   extraServerArgs: 
-     - --tls-san=127.0.0.1.nip.io
-   extraAgentArgs: [] 
- kubeconfig:
-   updateDefaultKubeconfig: true 
-   switchCurrentContext: true 
+  k3d:
+    wait: true
+    timeout: "60s"
+  k3s:
+    extraArgs:
+      - arg: --tls-san=127.0.0.1.nip.io
+        nodeFilters:
+          - server:*
+  kubeconfig:
+    updateDefaultKubeconfig: true
+    switchCurrentContext: true
 ```
 
 Which will ultimately provision a k3d cluster with the following:
