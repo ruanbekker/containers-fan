@@ -1,6 +1,6 @@
 ---
 title: "Single Sign-On with Authelia on Docker"
-date: 2023-04-26T18:00:00+02:00
+date: 2023-03-26T18:00:00+02:00
 draft: false
 description: "This tutorial will have a look at Authelia and making use of single sign-on for your web services."
 tags: ["docker", "authelia", "traefik", "security"]
