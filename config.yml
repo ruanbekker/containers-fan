@@ -78,7 +78,7 @@ params:
     homeInfoParams:
         Title: "Everything Containers Blog"
         Content: >
-            Welcome to [containers.fan](https://containers.fan) tech blog, where I write about anything containers from docker, kubernetes, docker swarm, aws ecs, etc.
+            Welcome to [containers.fan](https://containers.fan) tech blog, where I develop technical content about anything containers from docker, kubernetes, docker swarm, aws ecs, etc.
             - Feel free to reach out to me on Twitter 🐦 [@ruanbekker](https://twitter.com/ruanbekker) 
 
 
